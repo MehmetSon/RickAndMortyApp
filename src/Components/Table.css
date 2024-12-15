@@ -1,0 +1,100 @@
+/* .details-bar sınıfı, karakter detaylarının yer aldığı barın stilini tanımlar */
+.details-bar {
+  display: flex;  /* Flexbox düzeni kullanır */
+  flex-direction: column; /* Elemanları dikey olarak sıralar */
+  align-items: center; /* Elemanları yatayda ortalar */
+  gap: 5px; /* Elemanlar arasında 5px boşluk bırakır */
+  padding: 10px; /* İçerik etrafında 10px boşluk bırakır */
+  background-color: rgb(177, 226, 226); /* Arka plan rengi açık mavi */
+  border: 1px solid #ddd; /* Sınır çizgisi */
+  border-radius: 5px; /* Yuvarlak köşeler */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+}
+
+/* Karakter resimlerinin stilini tanımlar */
+.details-bar img {
+  width: 80px; /* Resmin genişliği 80px */
+  height: 80px; /* Resmin yüksekliği 80px */
+  object-fit: cover; /* Resmin orantılı şekilde kesilmesini sağlar */
+  margin-right: 15px; /* Resmin sağında 15px boşluk bırakır */
+}
+
+/* .details-row sınıfı, detayların satırını tanımlar */
+.details-row {
+  background-color: white; /* Beyaz arka plan */
+}
+
+/* .filters sınıfı, filtreleme butonlarını kapsayan alanı tanımlar */
+.filters {
+  margin-bottom: 20px; /* Alt tarafta 20px boşluk bırakır */
+}
+
+/* .filters altındaki div'ler için stil */
+.filters > div {
+  margin-bottom: 10px; /* Alt tarafta 10px boşluk bırakır */
+}
+
+/* Filtreleme butonları için stil */
+.filters button {
+  margin-right: 10px; /* Sağ tarafta 10px boşluk bırakır */
+  padding: 5px 10px; /* İç boşluk */
+  background-color: #cce4ff; /* Açık mavi (varsayılan) arka plan rengi */
+  color: black; /* Siyah yazı rengi */
+  border: none; /* Kenarlık yok */
+  border-radius: 5px; /* Yuvarlak köşeler */
+  cursor: pointer; /* Fare üzerine geldiğinde tıklanabilir imleç */
+  transition: background-color 0.3s ease; /* Arka plan renginin geçiş efekti */
+}
+
+/* Seçili buton için stil */
+.filters button.selected {
+  background-color: #007bff; /* Koyu mavi arka plan (seçili buton) */
+  color: white; /* Beyaz yazı rengi */
+}
+
+/* Hover (fare üzerine geldiğinde) durumu için stil */
+.filters button:hover {
+  background-color: #0056b3; /* Koyu mavi (hover efekti) */
+  color: white; /* Beyaz yazı rengi */
+}
+
+/* Sayfalama butonları için stil */
+.pagination button {
+  margin: 5px; /* Butonlar arasında 5px boşluk bırakır */
+  padding: 10px; /* İç boşluk */
+  border: 1px solid #ccc; /* Gri sınır */
+  background-color: #f9f9f9; /* Açık gri arka plan */
+  cursor: pointer; /* Tıklanabilir imleç */
+}
+
+/* Aktif sayfa butonunun stili */
+.pagination button.active {
+  background-color: #007bff; /* Koyu mavi arka plan (aktif buton) */
+  color: white; /* Beyaz yazı rengi */
+}
+
+/* Arama çubuğu için stil */
+.search-bar {
+  padding: 10px; /* İç boşluk */
+  font-size: 16px; /* Yazı boyutu */
+  border: 1px solid #ccc; /* Gri sınır */
+  border-radius: 4px; /* Yuvarlak köşeler */
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Hover durumunda arka plan ve kenarlık değişimi */
+}
+
+/* Arama çubuğu hover durumu için stil */
+.search-bar:hover {
+  background-color: #f0f8ff; /* Açık mavi arka plan (hover durumu) */
+  border-color: #007BFF; /* Mavi sınır (hover durumu) */
+}
+
+/* Tablo konteyneri için stil */
+.table-container {
+  width: 100%; /* Tam genişlik */
+  max-height: 500px; /* Maksimum yükseklik 500px */
+  overflow-y: scroll; /* Yalnızca dikey kaydırma ekler */
+  overflow-x: auto; /* Yatay kaydırma etkinleştirilir (gerekiyorsa) */
+  border: 1px solid #060000; /* Siyah bir sınır ekler */
+  box-shadow: 0px 4px 6px rgba(38, 174, 22, 0.1); /* Hafif bir gölge efekti */
+  border-radius: 8px; /* Yuvarlak köşeler */
+}
